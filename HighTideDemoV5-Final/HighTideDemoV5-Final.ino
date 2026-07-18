@@ -53,7 +53,7 @@ const int PWM_P2_AMPS   = 10;  // Analog Out: Pump 2 Amperage
 Adafruit_NeoPixel strip(36, PIN_NEOPIXEL, NEO_GRB + NEO_KHZ800);
 
 // --- GLOBAL VARIABLES ---
-float currentGallons = 25000;  // Current water volume
+float currentGallons = 25000;  // Current water volume Set this to half the tank volume (start point at 50%)
 int currentDrainRate = 500;    // Random demand from system
 float netFlowRate = 0;         // Inflow minus Outflow
 unsigned long lastUpdate = 0;  // Timer for physics loop
